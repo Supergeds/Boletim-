@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Frente - Boletim</title>
+</head>
+<body>
+  <h2>Frente do Boletim</h2>
+  <form action="/gerar_pdf" method="POST">
+    Nº Boletim: <input name="numero"><br>
+    Data: <input name="data"><br>
+    Código: <input name="codigo"><br>
+    Equipe: <input name="equipe"><br>
+    Natureza: <input name="natureza"><br>
+    Viatura: <input name="viatura"><br>
+    Km Inicial: <input name="km_inicial"><br>
+    Km Final: <input name="km_final"><br>
+    Horário Saída: <input name="horario_saida"><br>
+    Horário Local: <input name="horario_local"><br>
+    Horário Término: <input name="horario_termino"><br>
+    Endereço da Ocorrência: <input name="endereco_ocorrencia"><br>
+    Solicitante: <input name="solicitante"><br>
+    Endereço do Solicitante: <input name="endereco_solicitante"><br>
+    Bairro: <input name="bairro"><br>
+    Cidade: <input name="cidade"><br>
+    Histórico:<br>
+    <textarea name="historico" rows="5" cols="40"></textarea><br><br>
+    <button type="submit">Gerar PDF</button>
+  </form>
+  <br>
+  <a href="/verso">Ir para Verso</a>
+</body>
+</html>
